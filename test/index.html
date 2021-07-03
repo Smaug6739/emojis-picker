@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../dist/css/style.css">
+</head>
+<div id="picker">Button</div>
+<div id="deploy"></div>
+<input type="text" id="input">
+<body>
+
+</body>
+<script src="../dist/emojis-picker.js"></script>
+<script>
+	const picker = new EmojisPicker({
+		button : "picker",
+		output : "deploy",
+		text : "input",
+		path : "../dist/assets/emojis.json"
+	})
+	picker.deployMenu();
+setTimeout(() => {
+  picker.closeMenu();
+}, 5000);
+</script>
+
+</html>

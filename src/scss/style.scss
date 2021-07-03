@@ -1,0 +1,54 @@
+#ep-container {
+  background: rgb(153, 194, 233);
+  width: 250px;
+  height: 440px;
+  overflow-y: auto;
+}
+#ep-container {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .categories {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    a {
+      padding: 7px;
+      margin-top: 4px;
+      &:hover {
+        background-color: grey;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .emoji {
+    font-size: 30px;
+  }
+  h4 {
+    margin-left: 5px;
+  }
+}
